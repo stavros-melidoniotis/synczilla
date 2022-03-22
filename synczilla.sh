@@ -17,7 +17,7 @@ gio mount $GOOGLE_DRIVE
 
 if [ $ACTION == "push" ]; then
     # copy the site manager entries to google-drive
-    gio copy -p ~/.config/filezilla/sitemanager.xml $GOOGLE_DRIVE
+    gio copy -pi ~/.config/filezilla/sitemanager.xml $GOOGLE_DRIVE
 else
     # copy the site manager entries from google-drive
     gio copy -p $GOOGLE_DRIVE/sitemanager.xml ~/.config/filezilla/sitemanager.xml
